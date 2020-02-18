@@ -1,0 +1,105 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: rgb(0, 150, 200);
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif
+}
+#gallery_container #gallery_header,
+#gallery_container #gallery_footer {
+    text-align: center
+}
+#gallery_container #gallery_header {
+    margin: 24px 0
+}
+#gallery_container #gallery_header h1 {
+    margin: 12px 0 0 0
+}
+#gallery_container #gallery_header h2 {
+    margin: 0;
+    font-weight: normal
+}
+#gallery_container #gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+#gallery_container #gallery .gallery_item {
+    background: rgb(0, 115, 155);
+    margin: 20px;
+    padding: 8px;
+}
+#gallery_container #gallery .gallery_item .gallery_item_image img {
+    width: 100%
+}
+#gallery_container #gallery .gallery_item .gallery_item_title {
+    padding: 4px 0 0 0;
+    text-align: center;
+    color: rgb(255, 255, 255)
+}
+@media only screen and (min-width: 500px) {
+    #gallery_container #gallery_header h1 {
+        font-size: calc(20vw/1)
+    }
+    #gallery_container #gallery_header h2 {
+        font-size: calc(10vw/1)
+    }
+    #gallery_container #gallery .gallery_item {
+        width: calc(100vw/1 - 80px)
+    }
+}
+@media only screen and (min-width: 850px) {
+    #gallery_container #gallery_header h1 {
+        font-size: calc(20vw/2)
+    }
+    #gallery_container #gallery_header h2 {
+        font-size: calc(10vw/2)
+    }
+    #gallery_container #gallery .gallery_item {
+        width: calc(100vw/2 - 80px)
+    }
+}
+@media only screen and (min-width: 1280px) {
+    #gallery_container #gallery_header h1 {
+        font-size: calc(20vw/3)
+    }
+    #gallery_container #gallery_header h2 {
+        font-size: calc(10vw/3)
+    }
+    #gallery_container #gallery .gallery_item {
+        width: calc(100vw/3 - 80px)
+    }
+}
+@media only screen and (min-width: 1920px) {
+    #gallery_container #gallery_header h1 {
+        font-size: calc(20vw/4)
+    }
+    #gallery_container #gallery_header h2 {
+        font-size: calc(10vw/4)
+    }
+    #gallery_container #gallery .gallery_item {
+        width: calc(100vw/4 - 80px)
+    }
+}
+@media only screen and (min-width: 2560px) {
+    #gallery_container #gallery_header h1 {
+        font-size: calc(20vw/6)
+    }
+    #gallery_container #gallery_header h2 {
+        font-size: calc(10vw/6)
+    }
+    #gallery_container #gallery .gallery_item {
+        width: calc(100vw/6 - 80px)
+    }
+}
+@media only screen and (min-width: 3840px) {
+    #gallery_container #gallery_header h1 {
+        font-size: calc(20vw/8)
+    }
+    #gallery_container #gallery_header h2 {
+        font-size: calc(10vw/8)
+    }
+    #gallery_container #gallery .gallery_item {
+        width: calc(100vw/8 - 80px)
+    }
+}
