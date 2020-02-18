@@ -2,4 +2,4 @@
 
 Студент группы С-173: Всеволод Субботкин
 
-Использован фреймворк Neko Web Application
+Использован фреймворк [Neko Web Application](https://github.com/nekowebsoftware/nekoapp)
