@@ -1,0 +1,318 @@
+html, body, a, div, span, section, p, h1, h2, h3, h4, h5, h6, ul, ol, li, blockquote, galleryapp-string {
+    margin: 0;
+    padding: 0
+}
+html, body {
+    font-family: Arial, sans-serif
+}
+a {
+    text-decoration: none
+}
+img {
+    border: none;
+    max-width: 100%
+}
+ul {
+    list-style: none
+}
+[hidden] {
+    display: none!important
+}
+html, body {
+    font-family: Arial, sans-serif
+}
+gallery-app {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+	transition: filter ease .2s
+}
+gallery-app[overlay-active] {
+	filter: blur(5px)
+}
+galleryapp-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity ease .2s
+}
+gallery-app galleryapp-ui-graphic,
+galleryapp-window galleryapp-ui-graphic {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    vertical-align: middle
+}
+gallery-app galleryapp-ui-animation,
+galleryapp-window galleryapp-ui-animation {
+	position: relative;
+	overflow: hidden
+}
+gallery-app galleryapp-ui-animation galleryapp-ui-animation-sprite,
+galleryapp-window galleryapp-ui-animation galleryapp-ui-animation-sprite {
+	position: absolute
+}
+gallery-app galleryapp-module {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity ease .4s
+}
+galleryapp-overlay galleryapp-window {
+	position: relative;
+	overflow: hidden;
+	display: inline-flex;
+	flex-direction: column;
+	padding: 18px;
+	transition: transform ease .2s
+}
+gallery-app[processing] galleryapp-module {
+    opacity: .4
+}
+gallery-app[loading] galleryapp-module {
+    opacity: 0;
+    pointer-events: none
+}
+gallery-app galleryapp-ui-button,
+gallery-app galleryapp-ui-checkbox,
+gallery-app galleryapp-ui-radiobutton,
+gallery-app galleryapp-ui-textbox,
+gallery-app galleryapp-ui-combobox,
+galleryapp-window galleryapp-ui-button,
+galleryapp-window galleryapp-ui-checkbox,
+galleryapp-window galleryapp-ui-radiobutton,
+galleryapp-window galleryapp-ui-textbox,
+galleryapp-window galleryapp-ui-combobox {
+	position: relative;
+	display: inline-flex
+}
+gallery-app galleryapp-ui-button,
+galleryapp-window galleryapp-ui-button {
+	overflow: hidden
+}
+gallery-app galleryapp-ui-button a,
+galleryapp-window galleryapp-ui-button a {
+    display: inline-flex
+}
+gallery-app galleryapp-ui-button.galleryapp_ui_circle_button,
+galleryapp-window galleryapp-ui-button.galleryapp_ui_circle_button {
+	border-radius: 50%
+}
+gallery-app galleryapp-ui-button galleryapp-ui-animation,
+gallery-app galleryapp-ui-button galleryapp-ui-element.galleryapp_ui_button_background,
+gallery-app galleryapp-ui-button galleryapp-ui-element.galleryapp_ui_button_content,
+galleryapp-window galleryapp-ui-button galleryapp-ui-animation,
+galleryapp-window galleryapp-ui-button galleryapp-ui-element.galleryapp_ui_button_background,
+galleryapp-window galleryapp-ui-button galleryapp-ui-element.galleryapp_ui_button_content {
+	pointer-events: none
+}
+gallery-app galleryapp-ui-button galleryapp-ui-animation,
+galleryapp-window galleryapp-ui-button galleryapp-ui-animation {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2
+}
+gallery-app galleryapp-ui-button galleryapp-ui-element.galleryapp_ui_button_background,
+galleryapp-window galleryapp-ui-button galleryapp-ui-element.galleryapp_ui_button_background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1
+}
+gallery-app galleryapp-ui-button galleryapp-ui-element.galleryapp_ui_button_content,
+galleryapp-window galleryapp-ui-button galleryapp-ui-element.galleryapp_ui_button_content {
+	z-index: 3;
+	padding: 10px 14px;
+	font-weight: bold;
+	text-transform: uppercase
+}
+gallery-app galleryapp-ui-button.galleryapp_ui_glass_button galleryapp-ui-element.galleryapp_ui_button_background,
+galleryapp-window galleryapp-ui-button.galleryapp_ui_glass_button galleryapp-ui-element.galleryapp_ui_button_background {
+	filter: blur(1px)
+}
+gallery-app galleryapp-ui-button.galleryapp_ui_circle_button galleryapp-ui-element.galleryapp_ui_button_content,
+galleryapp-window galleryapp-ui-button.galleryapp_ui_circle_button galleryapp-ui-element.galleryapp_ui_button_content {
+	padding: 10px
+}
+galleryapp-window galleryapp-window-title {
+	margin: 0 30px 18px 0;
+	font-weight: bold
+}
+galleryapp-window galleryapp-ui-button#window_close_button {
+	position: absolute;
+	top: 12px;
+	right: 12px
+}
+galleryapp-window galleryapp-ui-button#window_close_button galleryapp-ui-element.galleryapp_ui_button_content {
+	padding: 5px;
+	width: 16px;
+	height: 16px
+}
+galleryapp-window galleryapp-ui-button#window_close_button galleryapp-ui-element.galleryapp_ui_button_content galleryapp-ui-graphic {
+	width: 16px;
+	height: 16px;
+	vertical-align: top
+}
+galleryapp-window .galleryapp_localechange_language_list {
+	padding: 15px 30px 0
+}
+galleryapp-window .galleryapp_localechange_language_list li {
+	margin: 0 0 12px;
+	font-size: .95em
+}
+gallery-app galleryapp-loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5000;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+gallery-app[initialization] galleryapp-loading {
+    transition: opacity ease 1s
+}
+gallery-app[initialization-finished] galleryapp-loading {
+    opacity: 0;
+    pointer-events: none
+}
+gallery-app galleryapp-loading galleryapp-ui-graphic {
+    width: 250px
+}
+gallery-app galleryapp-loading galleryapp-ui-graphic svg {
+    stroke-width: 0
+}
+gallery-app galleryapp-loading .loading_status {
+    position: absolute;
+    bottom: calc(8vh);
+    width: 100%
+}
+gallery-app galleryapp-loading galleryapp-ui-spinner,
+galleryapp-window galleryapp-loading galleryapp-ui-spinner {
+    margin: 0 auto
+}
+gallery-app galleryapp-loading .loading_message {
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+    min-height: 50px
+}
+gallery-app galleryapp-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 0;
+    transition: height ease .4s
+}
+gallery-app galleryapp-progress div.galleryapp_progress_bar_inner {
+    height: 100%
+}
+gallery-app[processing] galleryapp-progress,
+gallery-app[loading] galleryapp-progress {
+    height: 4px
+}
+gallery-app[loading] galleryapp-progress div.galleryapp_progress_bar_inner {
+    width: 0;
+    transition: width ease .4s
+}
+gallery-app galleryapp-module#gallery_main galleryapp-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+gallery-app galleryapp-module#gallery_main galleryapp-gallery galleryapp-gallery-item {
+    margin: 20px;
+    padding: 8px;
+    width: calc(100vw/var(--galleryapp-screen-mode) - 80px)
+}
+gallery-app galleryapp-module#gallery_main galleryapp-gallery galleryapp-gallery-item .galleryapp-gallery-item-image img {
+    width: 100%
+}
+gallery-app galleryapp-module#gallery_main galleryapp-gallery galleryapp-gallery-item .galleryapp-gallery-item-title {
+    text-align: center;
+    padding: 4px 0 0 0
+}
+gallery-app galleryapp-module#gallery_main galleryapp-gallery-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 24px 0
+}
+gallery-app galleryapp-module#gallery_main galleryapp-gallery-header galleryapp-gallery-heading1 {
+    font-size: calc(10vw/var(--galleryapp-screen-mode));
+    padding: 0 0 12px 0
+}
+gallery-app galleryapp-module#gallery_main galleryapp-gallery-header galleryapp-gallery-heading2 {
+    font-size: calc(20vw/var(--galleryapp-screen-mode));
+    font-weight: bold
+}
+gallery-app galleryapp-module#gallery_main galleryapp-gallery-footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column
+}
+gallery-app galleryapp-module#gallery_main galleryapp-gallery-footer .galleryapp-footer-powered {
+    padding: 25px 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    display: inline-flex
+}
+gallery-app galleryapp-module#gallery_main galleryapp-gallery-footer .galleryapp-footer-powered .galleryapp-nekoapp-logo {
+    margin: 0 0 0 12px
+}
+gallery-app galleryapp-module#gallery_main galleryapp-gallery-footer .galleryapp-footer-copyright {
+    padding: 12px 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center
+}
+gallery-app galleryapp-localebox {
+	margin: 0 20px 0 0;
+	padding: 4px 8px;
+	display: inline-flex;
+    align-items: center;
+    justify-content: center;
+	cursor: pointer;
+	opacity: .6;
+	transition: opacity ease .2s
+}
+gallery-app galleryapp-localebox:hover,
+gallery-app galleryapp-localebox:focus {
+	opacity: 1
+}
+gallery-app galleryapp-localebox .galleryapp_localebox_icon galleryapp-ui-graphic {
+	width: 20px;
+	height: 20px;
+	margin: 0 12px 0 0
+}
+gallery-app galleryapp-localebox .galleryapp_localebox_icon galleryapp-ui-graphic svg {
+	fill: transparent;
+	stroke: var(--galleryapp-primary-text-color);
+	stroke-width: 1px
+}
+gallery-app galleryapp-localebox .galleryapp_localebox_text {
+	font-size: 1.15em
+}

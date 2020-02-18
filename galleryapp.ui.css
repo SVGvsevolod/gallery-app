@@ -1,0 +1,362 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    background: var(--galleryapp-primary-background-color);
+    color: var(--galleryapp-primary-text-color)
+}
+galleryapp-overlay {
+	background: var(--galleryapp-overlay-background-color)
+}
+gallery-app a,
+galleryapp-window a {
+	color: var(--galleryapp-primary-text-color);
+	transition: color ease .2s
+}
+gallery-app a:hover,
+gallery-app a:focus,
+galleryapp-window a:hover,
+galleryapp-window a:focus {
+	color: var(--galleryapp-highlight-text-color)
+}
+gallery-app galleryapp-ui-button,
+galleryapp-window galleryapp-ui-button {
+	text-shadow: 1px 1px 2px var(--galleryapp-primary-shadow-color)
+}
+gallery-app galleryapp-ui-button galleryapp-ui-element.galleryapp_ui_button_background,
+galleryapp-window galleryapp-ui-button galleryapp-ui-element.galleryapp_ui_button_background {
+	transition: background ease .2s, border-color ease .2s
+}
+gallery-app galleryapp-ui-button.galleryapp_ui_glass_button galleryapp-ui-element.galleryapp_ui_button_background,0
+galleryapp-window galleryapp-ui-button.galleryapp_ui_glass_button galleryapp-ui-element.galleryapp_ui_button_background {
+	transition: background ease .2s, border-color ease .2s, opacity ease .2s
+}
+gallery-app galleryapp-ui-button.galleryapp_ui_default_button,
+gallery-app galleryapp-ui-button.galleryapp_ui_color_button,
+gallery-app galleryapp-ui-button.galleryapp_ui_glass_button,
+galleryapp-window galleryapp-ui-button.galleryapp_ui_default_button,
+galleryapp-window galleryapp-ui-button.galleryapp_ui_color_button,
+galleryapp-window galleryapp-ui-button.galleryapp_ui_glass_button {
+	border-radius: 2px;
+	box-shadow: 2px 3px 4px var(--galleryapp-primary-shadow-color)
+}
+gallery-app galleryapp-ui-button.galleryapp_ui_default_button galleryapp-ui-element.galleryapp_ui_button_background,
+gallery-app galleryapp-ui-button.galleryapp_ui_color_button galleryapp-ui-element.galleryapp_ui_button_background,
+gallery-app galleryapp-ui-button.galleryapp_ui_glass_button galleryapp-ui-element.galleryapp_ui_button_background,
+galleryapp-window galleryapp-ui-button.galleryapp_ui_default_button galleryapp-ui-element.galleryapp_ui_button_background,
+galleryapp-window galleryapp-ui-button.galleryapp_ui_color_button galleryapp-ui-element.galleryapp_ui_button_background,
+galleryapp-window galleryapp-ui-button.galleryapp_ui_glass_button galleryapp-ui-element.galleryapp_ui_button_background {
+	background: transparent;
+	border-style: solid;
+	border-width: 6px
+}
+gallery-app galleryapp-ui-button.galleryapp_ui_default_button galleryapp-ui-element.galleryapp_ui_button_background,
+galleryapp-window galleryapp-ui-button.galleryapp_ui_default_button galleryapp-ui-element.galleryapp_ui_button_background {
+	border-color: var(--galleryapp-primary-button-color)
+}
+gallery-app galleryapp-ui-button.galleryapp_ui_default_button:hover galleryapp-ui-element.galleryapp_ui_button_background,
+gallery-app galleryapp-ui-button.galleryapp_ui_default_button:focus galleryapp-ui-element.galleryapp_ui_button_background,
+galleryapp-window galleryapp-ui-button.galleryapp_ui_default_button:hover galleryapp-ui-element.galleryapp_ui_button_background,
+galleryapp-window galleryapp-ui-button.galleryapp_ui_default_button:focus galleryapp-ui-element.galleryapp_ui_button_background {
+	background: var(--galleryapp-primary-button-color)
+}
+gallery-app galleryapp-ui-button.galleryapp_ui_default_button:active galleryapp-ui-element.galleryapp_ui_button_background,
+galleryapp-window galleryapp-ui-button.galleryapp_ui_default_button:active galleryapp-ui-element.galleryapp_ui_button_background {
+	background: var(--galleryapp-secondary-button-color);
+	border-color: var(--galleryapp-secondary-button-color)
+}
+gallery-app galleryapp-ui-button.galleryapp_ui_color_button galleryapp-ui-element.galleryapp_ui_button_background,
+galleryapp-window galleryapp-ui-button.galleryapp_ui_color_button galleryapp-ui-element.galleryapp_ui_button_background {
+	border-color: var(--galleryapp-colorbutton-primary-color)
+}
+gallery-app galleryapp-ui-button.galleryapp_ui_color_button:hover galleryapp-ui-element.galleryapp_ui_button_background,
+gallery-app galleryapp-ui-button.galleryapp_ui_color_button:focus galleryapp-ui-element.galleryapp_ui_button_background,
+galleryapp-window galleryapp-ui-button.galleryapp_ui_color_button:hover galleryapp-ui-element.galleryapp_ui_button_background,
+galleryapp-window galleryapp-ui-button.galleryapp_ui_color_button:focus galleryapp-ui-element.galleryapp_ui_button_background {
+	background: var(--galleryapp-colorbutton-primary-color)
+}
+gallery-app galleryapp-ui-button.galleryapp_ui_color_button:active galleryapp-ui-element.galleryapp_ui_button_background,
+galleryapp-window galleryapp-ui-button.galleryapp_ui_color_button:active galleryapp-ui-element.galleryapp_ui_button_background {
+	background: var(--galleryapp-colorbutton-secondary-color);
+	border-color: var(--galleryapp-colorbutton-secondary-color)
+}
+gallery-app galleryapp-ui-button.galleryapp_ui_glass_button galleryapp-ui-element.galleryapp_ui_button_background,
+gallery-app galleryapp-ui-button.galleryapp_ui_glass_button galleryapp-ui-element.galleryapp_ui_button_background,
+galleryapp-window galleryapp-ui-button.galleryapp_ui_glass_button galleryapp-ui-element.galleryapp_ui_button_background,
+galleryapp-window galleryapp-ui-button.galleryapp_ui_glass_button galleryapp-ui-element.galleryapp_ui_button_background {
+	border-color: var(--galleryapp-glass-button-color);
+	opacity: .6
+}
+gallery-app galleryapp-ui-button.galleryapp_ui_glass_button:active galleryapp-ui-element.galleryapp_ui_button_background,
+galleryapp-window galleryapp-ui-button.galleryapp_ui_glass_button:active galleryapp-ui-element.galleryapp_ui_button_background {
+	opacity: .8
+}
+gallery-app galleryapp-ui-button.galleryapp_ui_glass_button:hover galleryapp-ui-element.galleryapp_ui_button_background,
+gallery-app galleryapp-ui-button.galleryapp_ui_glass_button:focus galleryapp-ui-element.galleryapp_ui_button_background,
+galleryapp-window galleryapp-ui-button.galleryapp_ui_glass_button:hover galleryapp-ui-element.galleryapp_ui_button_background,
+galleryapp-window galleryapp-ui-button.galleryapp_ui_glass_button:focus galleryapp-ui-element.galleryapp_ui_button_background {
+	background: var(--galleryapp-glass-button-color)
+}
+gallery-app galleryapp-ui-button.galleryapp_ui_pane_button:active galleryapp-ui-element.galleryapp_ui_button_background,
+gallery-app galleryapp-ui-button.galleryapp_ui_circle_button:active galleryapp-ui-element.galleryapp_ui_button_background,
+galleryapp-window galleryapp-ui-button.galleryapp_ui_pane_button:active galleryapp-ui-element.galleryapp_ui_button_background,
+galleryapp-window galleryapp-ui-button.galleryapp_ui_circle_button:active galleryapp-ui-element.galleryapp_ui_button_background {
+	background: var(--galleryapp-pane-button-color)
+}
+gallery-app galleryapp-ui-button.galleryapp_ui_pane_button galleryapp-ui-element.galleryapp_ui_button_content,
+gallery-app galleryapp-ui-button.galleryapp_ui_circle_button galleryapp-ui-element.galleryapp_ui_button_content,
+galleryapp-window galleryapp-ui-button.galleryapp_ui_pane_button galleryapp-ui-element.galleryapp_ui_button_content,
+galleryapp-window galleryapp-ui-button.galleryapp_ui_circle_button galleryapp-ui-element.galleryapp_ui_button_content {
+	opacity: .6;
+	transition: opacity ease .2s
+}
+gallery-app galleryapp-ui-button.galleryapp_ui_pane_button:hover galleryapp-ui-element.galleryapp_ui_button_content,
+gallery-app galleryapp-ui-button.galleryapp_ui_pane_button:focus galleryapp-ui-element.galleryapp_ui_button_content,
+gallery-app galleryapp-ui-button.galleryapp_ui_circle_button:hover galleryapp-ui-element.galleryapp_ui_button_content,
+gallery-app galleryapp-ui-button.galleryapp_ui_circle_button:focus galleryapp-ui-element.galleryapp_ui_button_content,
+galleryapp-window galleryapp-ui-button.galleryapp_ui_pane_button:hover galleryapp-ui-element.galleryapp_ui_button_content,
+galleryapp-window galleryapp-ui-button.galleryapp_ui_pane_button:focus galleryapp-ui-element.galleryapp_ui_button_content,
+galleryapp-window galleryapp-ui-button.galleryapp_ui_circle_button:hover galleryapp-ui-element.galleryapp_ui_button_content,
+galleryapp-window galleryapp-ui-button.galleryapp_ui_circle_button:focus galleryapp-ui-element.galleryapp_ui_button_content {
+	opacity: 1
+}
+gallery-app galleryapp-ui-button.galleryapp_ui_circle_button galleryapp-ui-element.galleryapp_ui_button_content galleryapp-ui-graphic svg,
+galleryapp-window galleryapp-ui-button.galleryapp_ui_circle_button galleryapp-ui-element.galleryapp_ui_button_content galleryapp-ui-graphic svg {
+	fill: var(--galleryapp-primary-text-color)
+}
+galleryapp-overlay galleryapp-window {
+	background: var(--galleryapp-window-background-color);
+	box-shadow: 0 0 16px 4px var(--galleryapp-primary-shadow-color)
+}
+gallery-app galleryapp-loading {
+    background: var(--galleryapp-primary-background-color)
+}
+gallery-app galleryapp-loading galleryapp-ui-graphic svg {
+    fill: var(--galleryapp-secondary-text-color);
+    stroke: var(--galleryapp-secondary-text-color)
+}
+gallery-app galleryapp-loading .loading_message {
+    color: var(--galleryapp-secondary-text-color)
+}
+gallery-app galleryapp-progress div.galleryapp_progress_bar_inner {
+    background: var(--galleryapp-progress-bar-color)
+}
+gallery-app[processing] galleryapp-progress div.galleryapp_progress_bar_inner {
+    position: absolute;
+    animation: progress_animation 1.25s linear infinite
+}
+gallery-app galleryapp-module#gallery_main galleryapp-gallery galleryapp-gallery-item {
+    background: var(--galleryapp-primary-button-color)
+}
+gallery-app galleryapp-module#gallery_main galleryapp-gallery galleryapp-gallery-item .galleryapp-gallery-item-title {
+    color: var(--galleryapp-secondary-text-color)
+}
+gallery-app galleryapp-module#gallery_main galleryapp-gallery-footer .galleryapp-footer-powered .galleryapp-nekoapp-logo svg {
+    fill: var(--galleryapp-secondary-text-color)
+}
+gallery-app galleryapp-ui-spinner,
+galleryapp-window galleryapp-ui-spinner {
+    display: block;
+    width: 60px;
+    height: 60px
+}
+gallery-app galleryapp-ui-spinner .spinner_container,
+galleryapp-window galleryapp-ui-spinner .spinner_container {
+    position: relative;
+    width: 60px;
+    height: 60px
+}
+gallery-app galleryapp-ui-spinner .spinner_rotator,
+galleryapp-window galleryapp-ui-spinner .spinner_rotator {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: rotate_spin 2s linear infinite
+}
+gallery-app galleryapp-ui-spinner .spinner_slice,
+galleryapp-window galleryapp-ui-spinner .spinner_slice {
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    border-radius: 20%;
+    overflow: hidden
+}
+gallery-app galleryapp-ui-spinner .spinner_slice.top,
+galleryapp-window galleryapp-ui-spinner .spinner_slice.top {
+    top: 0;
+    left: 30%;
+    right: 30%
+}
+gallery-app galleryapp-ui-spinner .spinner_slice.top_right,
+galleryapp-window galleryapp-ui-spinner .spinner_slice.top_right {
+    top: 7%;
+    right: 13%;
+    transform: rotate(45deg)
+}
+gallery-app galleryapp-ui-spinner .spinner_slice.right,
+galleryapp-window galleryapp-ui-spinner .spinner_slice.right {
+    top: 25%;
+    bottom: 25%;
+    right: 5%;
+    transform: rotate(90deg)
+}
+gallery-app galleryapp-ui-spinner .spinner_slice.bottom_right,
+galleryapp-window galleryapp-ui-spinner .spinner_slice.bottom_right {
+    bottom: 7%;
+    right: 13%;
+    transform: rotate(135deg)
+}
+gallery-app galleryapp-ui-spinner .spinner_slice.bottom,
+galleryapp-window galleryapp-ui-spinner .spinner_slice.bottom {
+    bottom: 0;
+    left: 30%;
+    right: 30%;
+    transform: rotate(180deg)
+}
+gallery-app galleryapp-ui-spinner .spinner_slice.bottom_left,
+galleryapp-window galleryapp-ui-spinner .spinner_slice.bottom_left {
+    bottom: 7%;
+    left: 13%;
+    transform: rotate(225deg)
+}
+gallery-app galleryapp-ui-spinner .spinner_slice.left,
+galleryapp-window galleryapp-ui-spinner .spinner_slice.left {
+    top: 25%;
+    bottom: 25%;
+    left: 5%;
+    transform: rotate(270deg)
+}
+gallery-app galleryapp-ui-spinner .spinner_slice.top_left,
+galleryapp-window galleryapp-ui-spinner .spinner_slice.top_left {
+    top: 7%;
+    left: 13%;
+    transform: rotate(315deg)
+}
+gallery-app galleryapp-ui-spinner .spinner_slice::after,
+galleryapp-window galleryapp-ui-spinner .spinner_slice::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    right: -75%;
+    border-color: var(--galleryapp-secondary-text-color) transparent transparent transparent;
+    border-style: solid;
+    border-width: 6px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    width: 250%;
+    height: 200%;
+    animation: circle_spin 3s ease-in infinite
+}
+gallery-app galleryapp-ui-spinner .spinner_slice.top::after,
+galleryapp-window galleryapp-ui-spinner .spinner_slice.top::after {
+    transform: rotate(-74deg)
+}
+gallery-app galleryapp-ui-spinner .spinner_slice.top_right::after,
+galleryapp-window galleryapp-ui-spinner .spinner_slice.top_right::after {
+    transform: rotate(-95deg)
+}
+gallery-app galleryapp-ui-spinner .spinner_slice.right::after,
+galleryapp-window galleryapp-ui-spinner .spinner_slice.right::after {
+    transform: rotate(-116deg)
+}
+gallery-app galleryapp-ui-spinner .spinner_slice.bottom_right::after,
+galleryapp-window galleryapp-ui-spinner .spinner_slice.bottom_right::after {
+    transform: rotate(-137deg)
+}
+gallery-app galleryapp-ui-spinner .spinner_slice.bottom::after,
+galleryapp-window galleryapp-ui-spinner .spinner_slice.bottom::after {
+    transform: rotate(-158deg)
+}
+gallery-app galleryapp-ui-spinner .spinner_slice.bottom_left::after,
+galleryapp-window galleryapp-ui-spinner .spinner_slice.bottom_left::after {
+    transform: rotate(-179deg)
+}
+gallery-app galleryapp-ui-spinner .spinner_slice.left::after,
+galleryapp-window galleryapp-ui-spinner .spinner_slice.left::after {
+    transform: rotate(-200deg)
+}
+gallery-app galleryapp-ui-spinner .spinner_slice.top_left::after,
+galleryapp-window galleryapp-ui-spinner .spinner_slice.top_left::after {
+    transform: rotate(-221deg)
+}
+galleryapp-ui-animation[animation-name="galleryapp_ui_wave_animation"][is-running] galleryapp-ui-animation-sprite[animating] {
+	background: var(--galleryapp-wave-animation-color);
+	border-radius: 50%;
+	animation: galleryapp_ui_wave_animation .5s ease
+}
+galleryapp-ui-button.galleryapp_ui_circle_button galleryapp-ui-animation[animation-name="galleryapp_ui_wave_animation"][is-running] galleryapp-ui-animation-sprite[animating],
+@keyframes galleryapp_ui_wave_animation {
+	0% {
+		top: var(--galleryapp-ui-animation-startpos-y);
+		left: var(--galleryapp-ui-animation-startpos-x);
+		width: 0;
+		height: 0;
+		opacity: 0
+	}
+	75% {
+		top: calc(var(--galleryapp-ui-animation-startpos-y) - var(--galleryapp-ui-animation-width));
+		left: calc(var(--galleryapp-ui-animation-startpos-x) - var(--galleryapp-ui-animation-width));
+		width: calc(var(--galleryapp-ui-animation-width)*2);
+		height: calc(var(--galleryapp-ui-animation-width)*2);
+		opacity: 1
+	}
+	100% {
+		top: calc(var(--galleryapp-ui-animation-startpos-y) - var(--galleryapp-ui-animation-width));
+		left: calc(var(--galleryapp-ui-animation-startpos-x) - var(--galleryapp-ui-animation-width));
+		width: calc(var(--galleryapp-ui-animation-width) * 2);
+		height: calc(var(--galleryapp-ui-animation-width) * 2);
+		opacity: 0
+	}
+}
+@keyframes galleryapp_ui_circle_wave_animation {
+	0% {
+		top: 50%;
+		left: 50%;
+		width: 0;
+		height: 0;
+		opacity: 0
+	}
+	50% {
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 1
+	}
+	100% {
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0
+	}
+}
+@keyframes rotate_spin {
+    100% {
+        transform: rotate(360deg)
+    }
+}
+@keyframes circle_spin {
+    40% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(120deg)
+    }
+}
+@keyframes progress_animation {
+    0% {
+        left: 0;
+        width: 0
+    }
+    50% {
+        left: 42%;
+        width: 16%
+    }
+    100% {
+        left: 100%;
+        width: 0
+    }
+}

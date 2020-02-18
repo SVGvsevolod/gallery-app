@@ -1,0 +1,16 @@
+:root {
+    --galleryapp-primary-text-color: rgb(0, 0, 0);
+    --galleryapp-secondary-text-color: rgb(255, 255, 255);
+	--galleryapp-primary-shadow-color: rgb(0, 0, 0, .5);
+    --galleryapp-primary-background-color: rgb(0, 150, 200);
+	--galleryapp-primary-button-color: rgb(0, 115, 155);
+	--galleryapp-secondary-button-color: rgb(0, 130, 180);
+    --galleryapp-colorbutton-primary-color: rgb(200, 200, 200);
+    --galleryapp-colorbutton-secondary-color: rgb(180, 0, 0);
+	--galleryapp-glass-button-color: rgb(220, 220, 220);
+	--galleryapp-pane-button-color: rgba(0, 130, 180, .6);
+	--galleryapp-wave-animation-color: rgba(255, 255, 255, .2);
+    --galleryapp-progress-bar-color: rgb(0, 150, 200);
+	--galleryapp-overlay-background-color: rgba(0, 0, 0, .6);
+	--galleryapp-window-background-color: rgb(0 ,100 ,100)
+}
